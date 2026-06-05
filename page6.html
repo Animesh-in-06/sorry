@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@ overflow-x:hidden;
 
 .page{
 min-height:100vh;
-padding:50px 20px;
+padding:20px 10px 100px;
 position:relative;
 display:flex;
 justify-content:center;
@@ -32,10 +32,10 @@ align-items:center;
 }
 
 .paper{
-width:90%;
+width:95%;
 max-width:900px;
 background:#fffdf8;
-padding:50px;
+padding:clamp(20px,5vw,50px);
 border-radius:25px;
 box-shadow:0 15px 40px rgba(0,0,0,.15);
 position:relative;
@@ -47,77 +47,83 @@ position:absolute;
 left:0;
 top:0;
 bottom:0;
-width:40px;
+width:clamp(15px,4vw,40px);
 background:#ffd8e6;
 border-radius:25px 0 0 25px;
 }
 
 .title{
-font-size:55px;
+font-size:clamp(32px,8vw,55px);
 text-align:center;
-margin-bottom:30px;
+margin-bottom:25px;
 color:#7d2d38;
+padding:0 10px;
 }
 
 .letter{
-font-size:28px;
-line-height:1.7;
+font-size:clamp(18px,4vw,28px);
+line-height:1.8;
 color:#333;
 outline:none;
+word-wrap:break-word;
 }
 
 .signature{
-margin-top:40px;
-font-size:32px;
+margin-top:35px;
+font-size:clamp(24px,5vw,32px);
 text-align:right;
 }
 
 .sticker{
 position:absolute;
-font-size:80px;
+font-size:clamp(35px,10vw,80px);
 animation:float 3s infinite ease-in-out;
+pointer-events:none;
 }
 
 .s1{
-top:40px;
-left:40px;
+top:15px;
+left:10px;
 }
 
 .s2{
-top:60px;
-right:50px;
+top:20px;
+right:10px;
 }
 
 .s3{
-bottom:40px;
-left:70px;
+bottom:15px;
+left:15px;
 }
 
 .s4{
-bottom:50px;
-right:70px;
+bottom:15px;
+right:15px;
 }
 
 @keyframes float{
+0%,100%{
+transform:translateY(0);
+}
 50%{
 transform:translateY(-15px);
 }
 }
 
 .buttons{
-margin-top:40px;
+margin-top:35px;
 display:flex;
-gap:20px;
+gap:15px;
 justify-content:center;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:15px 35px;
+padding:12px 28px;
 border:none;
 border-radius:50px;
 background:#f7c6d7;
-font-size:24px;
+font-size:clamp(18px,4vw,24px);
 cursor:pointer;
 transition:.3s;
 }
@@ -127,10 +133,43 @@ transform:scale(1.05);
 }
 
 .end{
-margin-top:40px;
+margin-top:35px;
 text-align:center;
-font-size:40px;
+font-size:clamp(22px,5vw,40px);
 color:#7d2d38;
+line-height:1.4;
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+.page{
+padding-top:15px;
+}
+
+.paper{
+padding:20px 18px;
+}
+
+.signature{
+text-align:center;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.btn{
+width:220px;
+max-width:90%;
+}
+
+.s3,
+.s4{
+display:none;
+}
+
 }
 
 </style>
@@ -161,40 +200,53 @@ You have always meant more to me than I probably expressed. Looking back, there 
 
 I regret the times I hurt you, disappointed you, or failed to show the care you deserved.
 
-If I could go back, I would choose better words, better actions, and a better version of myself. i neveer wanted to be toxic or even never wanted to control you slightlyy ... the way i acted was my fault and i accept that ...
-and im soo sorry for that too .... i know and i understand you iknow that tula toxicity bilkullll nhi avdtt ani mee tari pn tasach vaglooo mazaa chuklaa n balaa🥺 me je kahi vagloo tya magcha me tula reason pn sangitlllaa pn now i realized kii chuk mazich hoti i overreacted... ani mala bass sarvaa theek karaicha ahee i promiseeee ki me parat asa nhi vagnarr bilkulll nhiiii... na tula ashi toxicity feel hou denar isaaaaaa pleaseee mala ya vedes maaf karr and please accep my appology 🥺🫂
-you mean soooo much to me that im not able to survive in your scilence in the world where u are distant to mee.... i never wanted to hurt your feelings this muchhh aniii mala kharac tuzya najrett itkaaa nhvta padaichaaa isaaa balaaaa andd i geneunely loveeee youuu sooo muchhhh withhh my wholeeee heartttt isaaaa im not lyinggg and you know thatttt ..... pleaseee forgiveee me and accep my appology this timeeee.... maza chuklaaa pn ik ki uk the good version of meee the best moments we have shared together 🥺 please forgive me this timeee and i promise youu that i will be the Animeshhh thattt youu loveeeedddd 🥺🫶🫂
+If I could go back, I would choose better words, better actions, and a better version of myself. I never wanted to be toxic or control you even a little. The way I acted was my fault, and I accept that.
 
-and i appriciate you for every memory, every smile, every lesson, and every moment you shared with me.
+Ani I'm sooo sorry for that. Mala mahit ahe ki tula toxicity bilkul avdat nahi, ani tari pan me tasach vaglo. Maza kharach chukla n balaa 🥺
+
+Me je kahi vaglo tya magcha reason mi tula sangitla hota, pan ata mala realize zala ki chuk mazich hoti. Mi overreact zhalo.
+
+Mala fakta sagla theek karaycha ahe. I promise ki me parat asa nahi vagnarr. Bilkul nahi. Na tula ashi toxicity feel hou denar, na tula hurt karnaar.
+
+Please mala ya veles maaf kar. Please accept my apology 🥺🫂
+
+You mean soooo much to me that I'm not able to survive in your silence. The world feels incomplete when you are distant from me.
+
+Mala kharach tuzya najret itka padaycha navhta balaa. Ani mi genuinely loveee youuu with my whole heart. I'm not lying, and you know that.
+
+Please forgive me this time. I know you know the good version of me, the best memories we shared together 🥺
+
+I promise that I will be the Animesh that you loved 🥺🫶🫂
+
+And I appreciate you for every memory, every smile, every lesson, and every moment you shared with me.
 
 No matter what happens, I will always appreciate you.
 
 And if there's even a small chance to make things right, I promise I would.
- i loveeeee youuuuu soooo muchhh nnn isaaaaaa balaaaaaaa🥺🫂😭🫶
-❤️
+
+I loveeeee youuuuu soooo muchhh isaaaaaa balaaaaaaa 🥺🫂😭🫶❤️
 
 </div>
 
 <div class="signature" contenteditable="true">
-— Yours
+— Yours,<br>
 mighty raju
 </div>
 
 <div class="buttons">
 
-<button class="btn" onclick="window.location='index.html'">
+<button class="btn" onclick="window.location.href='index.html'">
 ↺ Replay
 </button>
 
 <button class="btn" onclick="alert('❤️ Thank you for reading ❤️')">
-❤️ forgive
+❤️ Forgive
 </button>
 
 </div>
 
 <div class="end">
-i hope you accept my appology and we fix everything soon as it wass pisaaa babyyyyy🥺❤️
-
+I hope you accept my apology and we fix everything soon just like it was, pisaaa babyyyyy 🥺❤️
 </div>
 
 </div>
