@@ -22,7 +22,7 @@ font-family:'Cormorant Garamond',serif;
 }
 
 .page{
-height:100vh;
+min-height:100dvh;
 width:100%;
 position:relative;
 background:url("bg2.jpg");
@@ -30,6 +30,7 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 overflow:hidden;
+padding-bottom:120px;
 }
 
 .label{
@@ -97,18 +98,17 @@ justify-content:center;
 align-items:center;
 font-size:clamp(28px,6vw,40px);
 cursor:pointer;
-z-index:5;
+z-index:999;
 user-select:none;
+bottom:40px;
 }
 
 .prev{
 left:15px;
-bottom:30px;
 }
 
 .next{
 right:15px;
-bottom:30px;
 }
 
 @keyframes float{
@@ -125,6 +125,10 @@ transform:translateY(-50%);
 
 /* Mobile Phones */
 @media (max-width:480px){
+
+.page{
+padding-bottom:140px;
+}
 
 .label{
 top:8%;
@@ -149,6 +153,14 @@ top:72%;
 width:100px;
 }
 
+.prev,
+.next{
+width:65px;
+height:65px;
+font-size:30px;
+bottom:70px; /* moved higher */
+}
+
 }
 
 /* Tablets */
@@ -160,6 +172,11 @@ font-size:34px;
 
 .teddy{
 width:170px;
+}
+
+.prev,
+.next{
+bottom:55px;
 }
 
 }
