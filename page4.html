@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<title>Page 4</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Patrick Hand',cursive;
+}
+
+body{
+overflow-y:auto;
+overflow-x:hidden;
+background:#d8c0ff;
+}
+
+.page{
+min-height:100vh;
+width:100%;
+background:url("bg4.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+padding-bottom:100px;
+}
+
+.title{
+padding-top:40px;
+text-align:center;
+font-size:48px;
+line-height:1;
+}
+
+.subtitle{
+font-size:20px;
+}
+
+.polaroid{
+position:absolute;
+width:180px;
+background:white;
+padding:12px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.polaroid img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.left{
+left:40px;
+top:180px;
+transform:rotate(-10deg);
+}
+
+.right{
+right:40px;
+top:180px;
+transform:rotate(10deg);
+}
+
+.string{
+position:absolute;
+top:-130px;
+left:50%;
+width:3px;
+height:130px;
+background:#c9a46b;
+}
+
+.scroll{
+position:relative;
+margin:120px auto 0 auto;
+width:280px;
+min-height:650px;
+background:#f0dca7;
+border:4px solid #b08a56;
+border-radius:10px;
+padding:25px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.scroll h2{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.scroll ul{
+list-style:none;
+font-size:28px;
+line-height:1.5;
+}
+
+.scroll ul li{
+outline:none;
+margin-bottom:8px;
+}
+
+.emoji{
+font-size:70px;
+margin-bottom:10px;
+}
+
+.prev,
+.next{
+position:fixed;
+width:80px;
+height:80px;
+border-radius:50%;
+background:#f7c6d7;
+border:4px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+cursor:pointer;
+z-index:999;
+}
+
+.prev{
+left:20px;
+bottom:20px;
+}
+
+.next{
+right:20px;
+bottom:20px;
+}
+
+@media(max-width:768px){
+
+.title{
+font-size:36px;
+}
+
+.polaroid{
+width:120px;
+}
+
+.polaroid img{
+height:120px;
+}
+
+.left{
+left:10px;
+top:180px;
+}
+
+.right{
+right:10px;
+top:180px;
+}
+
+.scroll{
+width:85%;
+margin-top:140px;
+}
+
+.scroll ul{
+font-size:24px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="title" contenteditable="true">
+A list of things<br>
+that make me happy
+<div class="subtitle">(in no particular order)</div>
+</div>
+
+<div class="polaroid left">
+<div class="string"></div>
+<img src="photo1.jpg">
+</div>
+
+<div class="polaroid right">
+<div class="string"></div>
+<img src="photo2.jpg">
+</div>
+
+<div class="scroll">
+
+<div class="emoji">🦦</div>
+
+<h2 contenteditable="true">You</h2>
+
+<ul>
+<li contenteditable="true">1. whole you</li>
+<li contenteditable="true">2. your smile</li>
+<li contenteditable="true">3. your sweet little talks</li>
+<li contenteditable="true">4. your moodswings</li>
+<li contenteditable="true">5. your anger</li>
+<li contenteditable="true">6. your presence</li>
+<li contenteditable="true">7. your existence</li>
+<li contenteditable="true">8. your laugh</li>
+<li contenteditable="true">9. your eyes</li>
+<li contenteditable="true">10. your kindness</li>
+<li contenteditable="true">
+i just love everything about u isaaa 🥺🫶❤️
+</li>
+</ul>
+
+</div>
+
+<div class="prev" onclick="window.location='page3.html'">
+⬅
+</div>
+
+<div class="next" onclick="window.location='page5.html'">
+➡
+</div>
+
+</div>
+
+</body>
+</html>

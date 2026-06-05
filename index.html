@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+
+<title>Apology Website</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+overflow:hidden;
+font-family:'Baloo 2',cursive;
+}
+
+.page{
+height:100vh;
+width:100%;
+position:relative;
+background:url("bg1.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.title{
+position:absolute;
+top:32%;
+left:50%;
+transform:translateX(-50%);
+font-size:55px;
+color:#7d2d38;
+text-align:center;
+line-height:1.1;
+width:80%;
+}
+
+.heart1{
+position:absolute;
+left:16%;
+top:45%;
+font-size:90px;
+color:#ff5aa5;
+transform:rotate(-15deg);
+}
+
+.heart2{
+position:absolute;
+right:15%;
+top:30%;
+font-size:90px;
+color:#ff5aa5;
+transform:rotate(10deg);
+}
+
+.sticker-left{
+position:absolute;
+left:6%;
+top:30%;
+width:120px;
+animation:float 2.5s infinite ease-in-out;
+}
+
+.sticker-right{
+position:absolute;
+right:10%;
+top:42%;
+width:90px;
+animation:float 3s infinite ease-in-out;
+}
+
+.next{
+position:absolute;
+right:15%;
+top:57%;
+width:85px;
+height:85px;
+border-radius:50%;
+background:#f7c6d7;
+border:4px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+cursor:pointer;
+transition:.3s;
+}
+
+.next:hover{
+transform:scale(1.1);
+}
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="page">
+
+<img src="pleading.png" class="sticker-left">
+<img src="sad.png" class="sticker-right">
+
+<div class="heart1">♡</div>
+<div class="heart2">♡</div>
+
+<h1 class="title" contenteditable="true">
+A little apology<br>
+for messing up with my pisaaa babyy 🥺 
+</h1>
+
+<div class="next" onclick="window.location='page2.html'">
+➜
+</div>
+
+</section>
+
+</body>
+</html>

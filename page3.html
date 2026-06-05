@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+<title>Page 3</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cinzel',serif;
+}
+
+body{
+overflow:hidden;
+}
+
+.page{
+height:100vh;
+width:100%;
+background:url("bg3.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+.prev{
+position:absolute;
+top:30px;
+left:50%;
+transform:translateX(-50%);
+width:90px;
+height:90px;
+border-radius:50%;
+background:#f6c6d9;
+border:4px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:45px;
+cursor:pointer;
+}
+
+.next{
+position:absolute;
+right:20px;
+top:50%;
+width:90px;
+height:90px;
+border-radius:50%;
+background:#f6c6d9;
+border:4px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:45px;
+cursor:pointer;
+}
+
+.grid{
+position:absolute;
+top:180px;
+width:100%;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+padding:0 40px;
+}
+
+.card{
+height:180px;
+background:#f5efe5;
+border:3px solid #7b6a58;
+border-radius:25px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+font-size:24px;
+padding:15px;
+cursor:pointer;
+transition:.3s;
+position:relative;
+}
+
+.card:hover{
+transform:scale(1.04);
+}
+
+.note{
+position:absolute;
+top:-18px;
+left:15px;
+font-size:40px;
+}
+
+.note2{
+position:absolute;
+top:-18px;
+right:15px;
+font-size:40px;
+}
+
+.tap{
+position:absolute;
+top:570px;
+width:100%;
+text-align:center;
+font-size:18px;
+color:#7d2d38;
+}
+
+.popup{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.55);
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.box{
+width:85%;
+max-width:600px;
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.box h2{
+margin-bottom:15px;
+}
+
+.close{
+margin-top:20px;
+padding:10px 25px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="prev" onclick="window.location='page2.html'">
+⬅
+</div>
+
+<div class="grid">
+
+<div class="card" onclick="openPopup('p1')">
+<div class="note">❝</div>
+<div class="note2">❞</div>
+I KNOW<br>I HURT YOU WHEN...
+</div>
+
+<div class="card" onclick="openPopup('p2')">
+<div class="note">❝</div>
+<div class="note2">❞</div>
+THE THING I<br>REGRET THE MOST
+</div>
+
+<div class="card" onclick="openPopup('p3')">
+<div class="note">❝</div>
+<div class="note2">❞</div>
+MOVING FORWARD,<br>I PROMISE...
+</div>
+
+<div class="card" onclick="openPopup('p4')">
+<div class="note">❝</div>
+<div class="note2">❞</div>
+THINGS THAT I<br>ADMIRE ABOUT YOU
+</div>
+
+</div>
+
+<div class="tap">
+Tap on each box to get the message
+</div>
+
+<div class="next" onclick="window.location='page4.html'">
+➡
+</div>
+
+</div>
+
+<!-- POPUPS -->
+
+<div class="popup" id="p1">
+<div class="box">
+<h2 contenteditable="true">I know I hurt you when...</h2>
+<p contenteditable="true">
+my beheavour get a little toxic or controlling but i promise on god now this will not happen again.. i promise n balaa 🥺
+</p>
+<button class="close" onclick="closePopup()">Close</button>
+</div>
+</div>
+
+<div class="popup" id="p2">
+<div class="box">
+<h2 contenteditable="true">The thing I regret most...</h2>
+<p contenteditable="true">
+im regretting that i made you feel the toxicity that you never liked and made you think that im trying to control you but im really sorry for that too pisaaa 🫠
+</p>
+<button class="close" onclick="closePopup()">Close</button>
+</div>
+</div>
+
+<div class="popup" id="p3">
+<div class="box">
+<h2 contenteditable="true">Moving forward I promise...</h2>
+<p contenteditable="true">
+i promise ki me asa parat kadhich nhi karnarr mazi swatah chii shappatt me ya nntr asa kadhich nhi hou deilll isaaaa balaa nakkiiiiiii 😭
+</p>
+<button class="close" onclick="closePopup()">Close</button>
+</div>
+</div>
+
+<div class="popup" id="p4">
+<div class="box">
+<h2 contenteditable="true">Things I admire about you...</h2>
+<p contenteditable="true">
+i admire about you is everythinh i cant live without your smile your talks tuzi bad bad tuza chidna tuza rusun basna i loveeeeeee everythingggggg.... bass he chup rahana and he distanceee me sahan nhi karu shakt ahe n balaaa i loveee youuuuuu... 😭🫂
+</p>
+<button class="close" onclick="closePopup()">Close</button>
+</div>
+</div>
+
+<script>
+
+function openPopup(id){
+document.getElementById(id).style.display="flex";
+}
+
+function closePopup(){
+document.querySelectorAll('.popup').forEach(p=>{
+p.style.display='none';
+});
+}
+
+</script>
+
+</body>
+</html>
